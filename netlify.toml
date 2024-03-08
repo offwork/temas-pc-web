@@ -1,0 +1,7 @@
+[build.environment]
+  PNPM_FLAGS = "--shamefully-hoist"
+[build]
+  command = "pnpm run build"
+  publish = "dist"
+[build.processing.html]
+  pretty_urls = false

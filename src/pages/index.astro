@@ -1,0 +1,186 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import heroImage from "../assets/images/ales-nesetril-Im7lZjxeLhg-unsplash.jpg";
+import image1 from "../assets/images/daniel-hatcher-zPHftoPajis-unsplash.jpg";
+import image2 from "../assets/images/pakata-goh-RDolnHtjVCY-unsplash.jpg";
+import image3 from "../assets/images/sergey-zolkin-_UeY8aTI6d0-unsplash.jpg";
+import image4 from "../assets/images/christian-wiediger-8WFcelVBOoI-unsplash.jpg";
+import { Icon } from "astro-icon/components";
+
+const features: Array<{ title: string; description?: string; icon: string }> = [
+  {
+    title: "Ist Ihr System zu langsam?",
+    icon: "heroicons:squares-plus",
+  },
+  {
+    title: "Ist Ihr System zu langsam?",
+    icon: "heroicons:squares-2x2",
+  },
+  {
+    title: "Braucht Ihr Windows länger als 5 Minuten zum Hochfahren?",
+    icon: "heroicons:clock",
+  },
+  {
+    title: "Läuft alles erbärmlich langsam?",
+    icon: "heroicons:truck",
+  },
+  {
+    title: "Und Ihr Puls beschleunigt sich?",
+    icon: "heroicons:arrow-trending-up",
+  },
+  {
+    title:
+      "Hat man Ihnen schon gesagt, dass Sie einen neuen Computer brauchen?",
+    icon: "heroicons:bell-alert",
+  },
+];
+---
+
+<Layout title="Temas PC Technik: Bleib sicher">
+  <div class="absolute z-0 w-full h-screen overflow-hidden">
+    <Image
+      class="relative z-0 object-contain object-center -translate-y-1/4"
+      format="webp"
+      src={heroImage}
+      alt="Bleib sicher"
+    />
+    <div
+      class="absolute z-10 bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-white via-white via-60%"
+    >
+    </div>
+  </div>
+  <main class="relative z-10 container mx-auto py-36 grid gap-40">
+    <div class="gird pt-24">
+      <div class="grid grid-flow-col place-items-center justify-items-stretch">
+        <span class="border-b border-white justify-self-auto"></span>
+        <h1
+          class="text-white font-semibold text-5xl text-center justify-self-center leading-relaxed max-w-[690px]"
+        >
+          PC Reparatur - Wir reparieren Computer & Laptops
+        </h1>
+        <span class="border-b border-white justify-self-auto"></span>
+      </div>
+      <div class="mx-auto grid gap-8 max-w-[1280px] mt-40">
+        <p class="text-center text-gigas text-3xl leading-relaxed">
+          Haben Sie Probleme mit Ihrem Computer oder Laptop? Wir helfen Ihnen
+          mit einer Laptop Reparatur Ihr Gerät wieder voll funktionsfähig zu
+          machen:
+        </p>
+        <p class="text-center text-gigas text-xl leading-relaxed">
+          Wir sind ein lokaler, flexibler Reparaturladen, der zentral in
+          Zürich-Oerlikon gelegen ist. Jegliche Geräte sind bei uns willkommen,
+          seien es MacBooks, iMacs, PCs, GamerPC, Simulationsrechner, CAD
+          Workstations, Server, Laptops oder Workstations. Wir haben uns einzig
+          und allein der Reparatur gewidmet und feiern jedes dieser
+          erfolgreichen Reparaturen. Wir lieben es die Lebensdauer «alter»
+          Geräte zu verlängern, die sonst im Elektroschrott landen würden.
+        </p>
+      </div>
+    </div>
+    <div class="grid gap-10">
+      <div class="grid grid-flow-col place-items-center justify-items-stretch">
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+        <h1
+          class="text-gigas-600 font-semibold text-nowrap text-4xl text-center justify-self-center max-w-[72]"
+        >
+          Nicht mit uns!
+        </h1>
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+      </div>
+      <ul
+        class="mx-auto bg-west-side-500 grid max-w-7xl grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        {
+          features.map(({ title, description, icon }) => (
+            <li class="flex flex-col items-center gap-4 text-white border border-white bg-offset p-6">
+              <div class="size-16 rounded-full border-2 border-current p-3">
+                <Icon name={icon} class="size-full" />
+              </div>
+              <p class="text-center font-extrabold text-xl">{title}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="grid gap-10">
+      <div class="grid grid-flow-col place-items-center justify-items-stretch">
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+        <h1
+          class="text-gigas-600 font-semibold text-4xl text-center justify-self-center max-w-[600px]"
+        >
+          Wir sagen Ihnen genau, was Ihr alter Freund braucht.
+        </h1>
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+      </div>
+      <h2 class="text-gigas-600 text-2xl text-center justify-self-center">
+        Wir sagen Ihnen genau, was Ihr alter Freund braucht.
+      </h2>
+      <div class="grid grid-cols-4 gap-8">
+        <div class="w-full h-60 rounded-xl overflow-hidden">
+          <Image
+            class="relative object-contain object-top"
+            format="webp"
+            src={image1}
+            alt="Bleib sicher"
+          />
+        </div>
+        <div
+          class="flex items-center w-full h-60 rounded-xl overflow-hidden border-8 border-west-side-500 p-6"
+        >
+          <p class="text-center text-lg text-gigas-600">
+            Jeder kann alle Versionen von Windows installieren, aber wissen Sie,
+            wie man es mit den richtigen Einstellungen und ohne Fehler macht?
+          </p>
+        </div>
+        <div class="w-full h-60 rounded-xl overflow-hidden">
+          <Image
+            class="relative object-contain object-center"
+            format="webp"
+            src={image2}
+            alt="Bleib sicher"
+          />
+        </div>
+        <div
+          class="flex items-center w-full h-60 rounded-xl overflow-hidden border-8 border-west-side-500 p-6"
+        >
+          <p class="text-center text-lg text-gigas-600">
+            Funktioniert Ihr WLAN nicht so, wie Sie es sich wünschen, oder kommt
+            es zu Ausfällen?
+          </p>
+        </div>
+        <div
+          class="flex items-center w-full h-60 rounded-xl overflow-hidden border-8 border-west-side-500 p-6"
+        >
+          <p class="text-center text-lg text-gigas-600">
+            Ist Ihnen klar, dass Sie Ihre Software und Windows aktualisieren
+            müssen, um Spiele zu spielen?
+          </p>
+        </div>
+        <div class="w-full h-60 rounded-xl overflow-hidden">
+          <Image
+            class="relative object-contain object-center"
+            format="webp"
+            src={image3}
+            alt="Bleib sicher"
+          />
+        </div>
+        <div
+          class="flex items-center w-full h-60 rounded-xl overflow-hidden border-8 border-west-side-500 p-6"
+        >
+          <p class="text-center text-lg text-gigas-600">
+            Sie können keine Werbung beim Surfen im Internet blockieren?
+          </p>
+        </div>
+        <div class="w-full h-60 rounded-xl overflow-hidden">
+          <Image
+            class="relative object-contain object-center"
+            format="webp"
+            src={image4}
+            alt="Bleib sicher"
+          />
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

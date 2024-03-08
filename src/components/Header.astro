@@ -78,7 +78,7 @@ const navItems: Array<{ title: string; url: string }> = [
   const toggleClass = "is-sticky";
 
   window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
+    const currentScroll = window.scrollY;
     if (currentScroll > 150) {
       header.classList.add(toggleClass);
     } else {

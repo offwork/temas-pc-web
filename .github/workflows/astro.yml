@@ -58,6 +58,11 @@ jobs:
           node-version: "20"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+      - uses: pnpm/action-setup@v3
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4

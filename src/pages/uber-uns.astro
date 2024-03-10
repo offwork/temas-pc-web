@@ -1,0 +1,127 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import heroImage from "../assets/images/sunil-ray-xT18Yn1584U-unsplash.jpg";
+import aboutImage1 from "../assets/images/john-hreniuc-Cb2UWXG94Hc-unsplash.jpg";
+import aboutImage2 from "../assets/images/jose-g-ortega-castro-iotgfmwrG7I-unsplash.jpg";
+---
+
+<Layout title="Temas PC Technik: Bleib sicher">
+  <div class="absolute z-0 w-full h-screen overflow-hidden">
+    <Image
+      class="absolute w-full h-full z-0 object-cover top-0 lg:object-center"
+      format="webp"
+      src={heroImage}
+      alt="Bleib sicher"
+    />
+    <div
+      class="absolute z-10 bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-white via-white via-65%"
+    >
+    </div>
+  </div>
+  <main class="relative z-10 container mx-auto pt-36 grid gap-40">
+    <div class="grid grid-flow-col place-items-center justify-items-stretch">
+      <span class="border-b border-white justify-self-auto hidden md:block"
+      ></span>
+      <h1
+        class="text-white font-semibold text-3xl 2xl:text-5xl text-center justify-self-center 2xl:leading-snug max-w-80 md:max-w-xl 2xl:max-w-3xl drop-shadow-[0_4px_1px_rgba(0,0,0,0.25)]"
+      >
+        Wir haben uns einzig und allein der Reparatur gewidmet und feiern jedes
+        dieser erfolgreichen Reparaturen.
+      </h1>
+      <span class="border-b border-white justify-self-auto hidden md:block"
+      ></span>
+    </div>
+    <div class="grid gap-10">
+      <div class="grid grid-flow-col place-items-center justify-items-stretch">
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+        <h1
+          class="text-gigas-600 font-semibold text-nowrap text-2xl max-w-sm lg:max-w-none lg:text-4xl text-center justify-self-center"
+        >
+          Reparieren statt wegwerfen
+        </h1>
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+      </div>
+      <div
+        class="relative grid w-full min-h-60 border border-west-side-500 place-items-center lg:place-content-end rounded-2xl overflow-hidden p-6"
+      >
+        <p
+          class="relative z-10 text-center lg:text-right text-gigas lg:text-lg 2xl:text-xl leading-relaxed max-w-xl"
+        >
+          Als Technik Begeisterter Mensch bin ich seit 15 Jahren in der
+          Computerbranche tätig. Ich biete professionelle Unterstützung im
+          Bereich der Computerwartung, -Reparatur und -Service an. Bis vor
+          kurzem habe ich einen Computerreparaturdienst unterstützt und arbeite
+          als technischer Dienstleister für ein Unternehmen. Aufgrund dieser
+          Grundlage unterstütze ich die Unternehmen auf der hannoverschen Messe.
+        </p>
+        <Image
+          class="absolute w-full h-full z-0 object-cover top-0 left-0 object-center hidden lg:block"
+          format="webp"
+          src={aboutImage2}
+          alt="Bleib sicher"
+        />
+        <div
+          class="absolute z-0 bottom-0 left-0 w-full h-full bg-gradient-to-l from-white via-white via-50%"
+        >
+        </div>
+      </div>
+      <div class="grid gap-10">
+        <div
+          class="grid grid-flow-col place-items-center justify-items-stretch"
+        >
+          <span class="border-b border-gigas-300 justify-self-auto"></span>
+          <h1
+            class="text-gigas-600 font-semibold text-2xl max-w-sm lg:max-w-none lg:text-4xl text-center justify-self-center"
+          >
+            Die Zufriedenheit meiner Kunden liegt mir sehr am Herzen.
+          </h1>
+          <span class="border-b border-gigas-300 justify-self-auto"></span>
+        </div>
+        <div
+          class="relative w-full min-h-60 border border-west-side-500 rounded-2xl overflow-hidden p-6"
+        >
+          <div
+            class="relative w-full grid gap-6 place-items-center lg:place-content-start z-10"
+          >
+            <p
+              class="text-left text-gigas lg:text-lg 2xl:text-xl leading-relaxed max-w-xl"
+            >
+              Ich arbeite detailliert und akribisch an den Einstellungen für den
+              Computer, um effizient mit kompatiblen Windows und dazugehörigen
+              Programmen.
+            </p>
+            <p
+              class="text-center lg:text-left text-gigas lg:text-lg 2xl:text-xl leading-relaxed max-w-xl"
+            >
+              Wenn ein Ersatzteil benötigt wird, informiere ich Sie und wir
+              bestellen das Teil gemeinsam zu einem günstigen Preis. Meine
+              Fachlichen Kompetenzen werde ich Ihnen mit der Zeit unter
+              Beweisstellen.
+            </p>
+            <p
+              class="text-center lg:text-left text-gigas lg:text-lg 2xl:text-xl leading-relaxed max-w-xl"
+            >
+              Temas-PC-Technik bietet mit der technologischen Entwicklung der
+              Zeit Schritt zu halten und ununterbrochenen, qualitativ Hochwertig
+              an Service zu leisten. Unser Prinzip ist eine kontinuierliche
+              Kundenzufriedenheit. Veränderungen, Entwicklung sowie kreative und
+              präzise Lösungen zeichnet uns aus.
+            </p>
+          </div>
+          <Image
+            class="absolute w-full h-full z-0 object-cover top-0 left-0 object-center hidden lg:block"
+            format="webp"
+            src={aboutImage1}
+            alt="Bleib sicher"
+          />
+          <div
+            class="absolute z-0 bottom-0 left-0 w-full h-full bg-gradient-to-r from-white via-white via-50%"
+          >
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -41,53 +41,71 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
       <div class="grid grid-flow-col place-items-center justify-items-stretch">
         <span class="border-b border-gigas-300 justify-self-auto"></span>
         <h1
-          class="text-gigas-600 font-semibold text-nowrap text-2xl max-w-sm lg:max-w-none lg:text-4xl text-center justify-self-center"
+          class="text-gigas-600 font-semibold text-2xl max-w-sm lg:max-w-none lg:text-4xl text-center justify-self-center"
         >
           Temas-PC-Technik in Hannover bietet zuverlässige Hilfe bei:
         </h1>
         <span class="border-b border-gigas-300 justify-self-auto"></span>
       </div>
 
-      <div class="flex items-center justify-center space-x-10">
-        <div class="grid size-96">
+      <div class="flex flex-col lg:flex-row items-center justify-center lg:space-x-10">
+        <div class="grid size-80 md:size-96">
           <Icon class="text-west-side size-full" name="heroicons:newspaper" />
         </div>
-        <ul class="grid gap-5 list-inside text-xl text-gigas">
-          <li class="flex items-center indent-4">
-            <Icon class="text-west-side text-2xl" name="heroicons:cpu-chip" />
-            Softwarefehler und Hardwareausfälle
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon class="text-west-side text-2x" name="heroicons:printer" />
-            Softwareinstallation für Drucker, Scanner und andere Geräte
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon class="text-west-side text-2x" name="heroicons:inbox-stack" />
-            Datenwiederherstellung und Datensicherung
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon
-              class="text-west-side text-2x"
-              name="heroicons:shield-check"
-            />
-            Schutz Ihres Computers vor Viren und anderen Bedrohungen
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon class="text-west-side text-2x" name="heroicons:trash" />
-            Beseitigung von Viren und damit
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon
-              class="text-west-side text-2x"
-              name="heroicons:adjustments-vertical"
-            />
-            Beseitigung und Korrektur von Systemfehlern
-          </li>
-          <li class="flex items-center indent-4">
-            <Icon class="text-west-side text-2x" name="heroicons:squares-2x2" />
-            Hilfe bei Windows- und Treiber-Update-Fehlern
-          </li>
-        </ul>
+        <div class="grid grid-flow-col gap-4">
+          <ul class="grid gap-5 list-outside text-base lg:text-base xl:text-xl text-gigas">
+            <li class="flex items-center">
+              <Icon class="text-west-side text-2xl" name="heroicons:cpu-chip" />
+            </li>
+            <li class="flex items-center">
+              <Icon class="text-west-side text-2xl" name="heroicons:printer" />
+            </li>
+            <li class="flex items-center">
+              <Icon class="text-west-side text-2xl" name="heroicons:inbox-stack" />
+            </li>
+            <li class="flex items-center">
+              <Icon
+                class="text-west-side text-2xl"
+                name="heroicons:shield-check"
+              />
+            </li>
+            <li class="flex items-center">
+              <Icon class="text-west-side text-2xl" name="heroicons:trash" />
+            </li>
+            <li class="flex items-center">
+              <Icon
+                class="text-west-side text-2xl"
+                name="heroicons:adjustments-vertical"
+              />
+            </li>
+            <li class="flex items-center">
+              <Icon class="text-west-side text-2xl" name="heroicons:squares-2x2" />
+            </li>
+          </ul>
+          <ul class="grid gap-5 list-inside text-base lg:text-base xl:text-xl text-gigas">
+            <li class="flex items-center">
+              Softwarefehler und Hardwareausfälle
+            </li>
+            <li class="flex items-center">
+              Softwareinstallation für Drucker, Scanner und andere Geräte
+            </li>
+            <li class="flex items-center">
+              Datenwiederherstellung und Datensicherung
+            </li>
+            <li class="flex items-center">
+              Schutz Ihres Computers vor Viren und anderen Bedrohungen
+            </li>
+            <li class="flex items-center">
+              Beseitigung von Viren und damit
+            </li>
+            <li class="flex items-center">
+              Beseitigung und Korrektur von Systemfehlern
+            </li>
+            <li class="flex items-center">
+              Hilfe bei Windows- und Treiber-Update-Fehlern
+            </li>
+          </ul>
+        </div>
       </div>
 
       <div class="relative border-b-2 w-full h-1">
@@ -100,13 +118,13 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
 
       <div class="grid gap-28 pt-8">
         <div
-          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+          class="grid mx-auto grid-flow-row xl:grid-flow-col place-items-center gap-16 max-w-6xl"
         >
           <div
-            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+            class="grid rounded-2xl max-h-72 overflow-hidden xl:order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
           >
             <Image
-              class=""
+              class="translate-y-0 md:-translate-y-1/4 xl:translate-y-0"
               format="webp"
               src={aboutImage1}
               alt="Bleib sicher"
@@ -131,13 +149,13 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
         </div>
 
         <div
-          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+          class="grid mx-auto grid-flow-row xl:grid-flow-col place-items-center gap-16 max-w-6xl"
         >
           <div
             class="grid rounded-2xl max-h-72 overflow-hidden border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
           >
             <Image
-              class=""
+              class="translate-y-0 md:-translate-y-1/4 xl:translate-y-0"
               format="webp"
               src={aboutImage2}
               alt="Bleib sicher"
@@ -161,13 +179,13 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
         </div>
 
         <div
-          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+          class="grid mx-auto grid-flow-row xl:grid-flow-col place-items-center gap-16 max-w-6xl"
         >
           <div
-            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+            class="grid rounded-2xl max-h-72 overflow-hidden xl:order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
           >
             <Image
-              class=""
+              class="translate-y-0 md:-translate-y-1/4 xl:translate-y-0"
               format="webp"
               src={aboutImage3}
               alt="Bleib sicher"
@@ -193,13 +211,13 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
         </div>
 
         <div
-          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+          class="grid mx-auto grid-flow-row xl:grid-flow-col place-items-center gap-16 max-w-6xl"
         >
           <div
             class="grid rounded-2xl max-h-72 overflow-hidden border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
           >
             <Image
-              class=""
+              class="translate-y-0 md:-translate-y-1/4 xl:translate-y-0"
               format="webp"
               src={aboutImage4}
               alt="Bleib sicher"
@@ -248,13 +266,13 @@ import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
         </div>
 
         <div
-          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+          class="grid mx-auto grid-flow-row xl:grid-flow-col place-items-center gap-16 max-w-6xl"
         >
           <div
-            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+            class="grid rounded-2xl max-h-72 overflow-hidden xl:order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
           >
             <Image
-              class=""
+              class="translate-y-0 md:-translate-y-1/4 xl:translate-y-0"
               format="webp"
               src={aboutImage5}
               alt="Bleib sicher"

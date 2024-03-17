@@ -69,3 +69,5 @@ export default {
   },
   plugins: [],
 };
+
+console.log(screens)

@@ -1,8 +1,31 @@
 ---
+import { Icon } from "astro-icon/components";
 ---
 
 <footer class="relative z-20 w-full border-t border-gigas-300 mt-20 py-8">
   <div class="container mx-auto">
-    <p class="text-sm text-gigas-400 text-center">Copyright © 2024 temas-pc-technik.com</p>
+    <div
+      class="grid grid-flow-row md:grid-flow-col justify-center gap-8 text-gigas mb-8"
+    >
+      <span class="flex items-center space-x-2">
+        <Icon class="text-gigas text-2xl" name="heroicons:map-pin" />
+        <span>Kokenstr.6 30159 Hannover</span>
+      </span>
+      <span class="flex items-center space-x-2">
+        <Icon class="text-gigas text-2xl" name="heroicons:phone" />
+        <span>0174 655 14 92</span>
+      </span>
+      <span class="flex items-center space-x-2">
+        <Icon class="text-gigas text-2xl" name="heroicons:envelope" />
+        <a
+          class="underline"
+          href="mailto:temas-pc-technik@outlook.de"
+          target="_blank">temas-pc-technik@outlook.de</a
+        >
+      </span>
+    </div>
+    <p class="text-sm text-gigas-400 text-center">
+      Copyright © 2024 temas-pc-technik.com
+    </p>
   </div>
 </footer>

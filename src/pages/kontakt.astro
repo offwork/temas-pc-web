@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Temas PC Technik: Bleib sicher">
+  <div class="relative top-28 left-0 z-0 w-full">
+    <iframe
+      width="100%"
+      height="520"
+      style="border:0"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAXB5ArSBw7RzZqM7InfT6Q21tMQKTYSiY
+    &q=Kokenstraße+630159+Hannover,Germany"
+    >
+    </iframe>
+  </div>
+  <main class="relative z-10 container max-w-5xl mx-auto pt-36">
+    <div class="grid grid-flow-col place-items-center justify-items-stretch">
+      <span class="border-b border-gigas justify-self-auto hidden md:block"
+      ></span>
+      <h1
+        class="text-gigas font-semibold text-3xl 2xl:text-5xl text-center justify-self-center 2xl:leading-snug max-w-80 md:max-w-xl 2xl:max-w-3xl drop-shadow-[0_4px_1px_rgba(0,0,0,0.25)]"
+      >
+      Kontaktformular
+      </h1>
+      <span class="border-b border-gigas justify-self-auto hidden md:block"
+      ></span>
+    </div>
+    <div class="grid mx-auto gap-4 mt-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas">Vorname *</span>
+        <div class="flex">
+          <input type="text" class="relative block w-full bg-white appearance-none rounded-2xl border border-gigas-400 px-6 py-4 text-sm text-gigas font-light placeholder-gigas-400 focus:bg-white focus:outline-none focus:border-gigas">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas">Nachname *</span>
+        <div class="flex">
+          <input type="text" class="relative block w-full bg-white appearance-none rounded-2xl border border-gigas-400 px-6 py-4 text-sm text-gigas font-light placeholder-gigas-400 focus:bg-white focus:outline-none focus:border-gigas">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas">E-Mail *</span>
+        <div class="flex ">
+          <input type="email" class="relative block w-full bg-white appearance-none rounded-2xl border border-gigas-400 px-6 py-4 text-sm text-gigas font-light placeholder-gigas-400 focus:bg-white focus:outline-none focus:border-gigas">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas">Telefon</span>
+        <div class="flex">
+          <input type="tel" class="relative block w-full bg-white appearance-none rounded-2xl border border-gigas-400 px-6 py-4 text-sm text-gigas font-light placeholder-gigas-400 focus:bg-white focus:outline-none focus:border-gigas">
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas">Nachricht</span>
+        <div class="flex">
+          <textarea rows="4" class="relative block w-full bg-white appearance-none rounded-2xl border border-gigas-400 px-6 py-4 text-sm text-gigas font-light placeholder-gigas-400 focus:bg-white focus:outline-none focus:border-gigas" />
+        </div>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 place-items-stretch">
+        <span class="text-gigas"></span>
+        <div class="flex">
+          <button type="button" class="relative block w-full bg-west-side text-white p-5 rounded-xl">Absenden</button>
+        </div>
+      </div>
+    </div>
+    <div class="grid gap-6 text-gigas mt-20">
+      <p>
+        <strong>Adresse:</strong> Kokenstr. 6 30159 Hannover
+      </p>
+      <p>
+        <strong>Tel:</strong> 0174 655 14 92
+      </p>
+      <p>
+        <strong>E-Mail:</strong> <a class="underline" href="mailto:temas-pc-technik@outlook.de" target="_blank">temas-pc-technik@outlook.de</a>
+      </p>
+    </div>
+  </main>
+</Layout>

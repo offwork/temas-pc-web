@@ -1,0 +1,291 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/Layout.astro";
+import { Icon } from "astro-icon/components";
+import heroImage from "../assets/images/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg";
+import aboutImage1 from "../assets/images/thisisengineering-raeng-IpTPp_aPbYE-unsplash.jpg";
+import aboutImage2 from "../assets/images/ella-don-L9zRdieX0cA-unsplash.jpg";
+import aboutImage3 from "../assets/images/clint-patterson-yGPxCYPS8H4-unsplash.jpg";
+import aboutImage4 from "../assets/images/cytonn-photography-n95VMLxqM2I-unsplash.jpg";
+import aboutImage5 from "../assets/images/flyd-mT7lXZPjk7U-unsplash.jpg";
+---
+
+<Layout title="Temas PC Technik: Bleib sicher">
+  <div class="absolute z-0 w-full h-screen overflow-hidden">
+    <Image
+      class="absolute w-full h-full z-0 -translate-y-1/4 object-cover top-0 lg:object-center"
+      format="webp"
+      src={heroImage}
+      alt="Bleib sicher"
+    />
+    <div
+      class="absolute z-10 bottom-0 left-0 w-full h-2/3 bg-gradient-to-t from-white via-white via-65%"
+    >
+    </div>
+  </div>
+  <main class="relative z-10 container mx-auto pt-36 grid gap-40">
+    <div
+      class="grid grid-flow-col place-items-center justify-items-stretch min-h-72"
+    >
+      <span class="border-b border-white justify-self-auto hidden md:block"
+      ></span>
+      <h1
+        class="text-white font-semibold text-3xl 2xl:text-5xl text-center justify-self-center 2xl:leading-snug max-w-80 md:max-w-xl 2xl:max-w-3xl drop-shadow-[0_4px_1px_rgba(0,0,0,0.25)]"
+      >
+        Reparatur, Wartung und Service von Computern und Laptops
+      </h1>
+      <span class="border-b border-white justify-self-auto hidden md:block"
+      ></span>
+    </div>
+    <div class="grid gap-28">
+      <div class="grid grid-flow-col place-items-center justify-items-stretch">
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+        <h1
+          class="text-gigas-600 font-semibold text-nowrap text-2xl max-w-sm lg:max-w-none lg:text-4xl text-center justify-self-center"
+        >
+          Temas-PC-Technik in Hannover bietet zuverlässige Hilfe bei:
+        </h1>
+        <span class="border-b border-gigas-300 justify-self-auto"></span>
+      </div>
+
+      <div class="flex items-center justify-center space-x-10">
+        <div class="grid size-96">
+          <Icon class="text-west-side size-full" name="heroicons:newspaper" />
+        </div>
+        <ul class="grid gap-5 list-inside text-xl text-gigas">
+          <li class="flex items-center indent-4">
+            <Icon class="text-west-side text-2xl" name="heroicons:cpu-chip" />
+            Softwarefehler und Hardwareausfälle
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon class="text-west-side text-2x" name="heroicons:printer" />
+            Softwareinstallation für Drucker, Scanner und andere Geräte
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon class="text-west-side text-2x" name="heroicons:inbox-stack" />
+            Datenwiederherstellung und Datensicherung
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon
+              class="text-west-side text-2x"
+              name="heroicons:shield-check"
+            />
+            Schutz Ihres Computers vor Viren und anderen Bedrohungen
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon class="text-west-side text-2x" name="heroicons:trash" />
+            Beseitigung von Viren und damit
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon
+              class="text-west-side text-2x"
+              name="heroicons:adjustments-vertical"
+            />
+            Beseitigung und Korrektur von Systemfehlern
+          </li>
+          <li class="flex items-center indent-4">
+            <Icon class="text-west-side text-2x" name="heroicons:squares-2x2" />
+            Hilfe bei Windows- und Treiber-Update-Fehlern
+          </li>
+        </ul>
+      </div>
+
+      <div class="relative border-b-2 w-full h-1">
+        <div
+          class="absolute bg-white h-28 w-28 p-6 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        >
+          <Icon class="text-west-side size-full" name="heroicons:sparkles" />
+        </div>
+      </div>
+
+      <div class="grid gap-28 pt-8">
+        <div
+          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+        >
+          <div
+            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+          >
+            <Image
+              class=""
+              format="webp"
+              src={aboutImage1}
+              alt="Bleib sicher"
+            />
+          </div>
+          <div class="grid gap-6 text-gigas">
+            <h3 class="font-semibold text-2xl">
+              Computerleistung und Optimierung
+            </h3>
+            <p class="text-lg">
+              Nach einer gewissen Nutzungsdauer Ihres Computers/Notebooks
+              verlangsamen unnötige Werbung, Cookies oder aus dem Internet
+              heruntergeladene Dateien Ihren Computer und nehmen unnötig Platz
+              auf Ihrer Festplatte ein.
+            </p>
+            <p class="text-lg">
+              Wir entfernen diese alten Dateien, sowie alte Windows-Updates und
+              den damit verbundenen Datenmüll. Dadurch sorgen wir dafür, dass
+              Ihr Computer aufgeräumt wird und Sie mehr freien Platz haben.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+        >
+          <div
+            class="grid rounded-2xl max-h-72 overflow-hidden border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+          >
+            <Image
+              class=""
+              format="webp"
+              src={aboutImage2}
+              alt="Bleib sicher"
+            />
+          </div>
+          <div class="grid gap-6 text-gigas">
+            <h3 class="font-semibold text-2xl">
+              Haben Sie Probleme mit Ihrem Laptop oder Computer? Wir untersuchen
+              Ihr Gerät und nennen Ihnen das Problem!
+            </h3>
+            <p class="text-lg">
+              Während der Analyse beheben wir in der Regel kleinere Fehler,
+              damit wir Ihnen weiterhelfen können. Anschließend unterbreiten wir
+              Ihnen einen Kostenvoranschlag und besprechen mit Ihnen, wie Sie
+              das Problem kostengünstig beheben können.
+            </p>
+            <p class="text-lg">
+              Bei weiteren Fragen stehen wir Ihnen gerne zur Verfügung.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+        >
+          <div
+            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+          >
+            <Image
+              class=""
+              format="webp"
+              src={aboutImage3}
+              alt="Bleib sicher"
+            />
+          </div>
+          <div class="grid gap-6 text-gigas">
+            <h3 class="font-semibold text-2xl">
+              Die Installation von einem Betriebssystem kann sich heutzutage als
+              kompliziert herausstellen.
+            </h3>
+            <p class="text-lg">Überlassen Sie dies uns!</p>
+            <p class="text-lg">
+              Wir installieren ihr Betriebssystem, optimieren ihre internen
+              Systemeinstellungen, installieren alle notwendigen Treiber und
+              stellen sicher, dass ihr System auf dem neuesten Stand ist.
+            </p>
+            <p class="text-lg">
+              Außerdem bieten wir Ihnen an, die von Ihnen gewünschten
+              Softwareprogramme zu installieren und für Sie arbeitsbereit zu
+              konfigurieren.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+        >
+          <div
+            class="grid rounded-2xl max-h-72 overflow-hidden border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+          >
+            <Image
+              class=""
+              format="webp"
+              src={aboutImage4}
+              alt="Bleib sicher"
+            />
+          </div>
+          <div class="grid gap-6 text-gigas">
+            <h3 class="font-semibold text-2xl">Computer per Fernwartung</h3>
+            <p class="text-lg">
+              In den meisten Fällen wird eine Fernwartungssoftware verwendet, um
+              Videokonferenzen, Dateitransfer und Bildschirmfreigabe zu
+              ermöglichen.
+            </p>
+            <p class="text-lg">
+              Das Programm ermöglicht es Ihnen, sich schnell mit dem Computer
+              einer anderen Person zu verbinden. Auch Firewalls können damit
+              umgangen werden.
+            </p>
+            <p class="text-lg">
+              Nach der Installation erhalten Sie eine Benutzerkennung und ein
+              Passwort.
+            </p>
+            <p class="text-lg">
+              Wir zeigen Ihnen, wie Sie Ihre Anmeldedaten (ID-Nummer) erneuern
+              und auf Wunsch ändern können.
+            </p>
+            <p class="text-lg">
+              Um sich mit einem anderen Gerät zu verbinden, benötigen Sie die
+              ID-Nummer des Nutzers - auch dort muss TeamViewer installiert sein
+              - und einen Code.
+            </p>
+            <p class="text-lg">
+              Erst dann kann eine Verbindung aufgebaut und der Datenaustausch,
+              die Fernsteuerung oder eine Konferenz gestartet werden.
+            </p>
+            <p class="text-lg">
+              TeamViewer ist besonders für die Arbeit im Team geeignet. Auch die
+              Übertragung großer Datenmengen ist kein Problem und dank
+              geschützter Datenkanäle sicher.
+            </p>
+            <p class="text-lg">
+              Wir bieten unseren Kunden ausschließlich den Service der
+              Fernwartung, Aktualisierung und Reinigung Ihres Computers über das
+              Internet an.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid mx-auto grid-flow-col place-items-center gap-16 max-w-6xl"
+        >
+          <div
+            class="grid rounded-2xl max-h-72 overflow-hidden order-last border-4 drop-shadow-[0_15px_20px_rgba(0,0,0,0.30)] border-west-side"
+          >
+            <Image
+              class=""
+              format="webp"
+              src={aboutImage5}
+              alt="Bleib sicher"
+            />
+          </div>
+          <div class="grid gap-6 text-gigas">
+            <h3 class="font-semibold text-2xl">
+              Entfernung von Viren und Malware
+            </h3>
+            <p class="text-lg">
+              Leider wird das Surfen im Internet immer unsicherer. Viren, Adware
+              und Spyware-Programme schleichen sich schnell und unbemerkt ein
+              und verursachen schließlich Systemabstürze und Verlangsamungen.
+              Wir helfen Ihnen und Ihrem Computer, Malware von Ihrem Computer zu
+              entfernen und informieren Sie darüber, wie Sie neue Invasionen
+              verhindern können.
+            </p>
+            <p class="text-lg">
+              Selbst für gute Leute bleibt eine bösartige Software in der Regel
+              unbemerkt und wird lediglich durch eine nach Echtheit suchende
+              Warnung erkannt, die zur Zahlung auffordert oder den Besitzer des
+              verseuchten PCs beschuldigt.
+            </p>
+            <p class="text-lg">
+              Dies ist eine hinterhältige Methode, mit der Hacker Geld erpressen
+              wollen. Damit Sie dieser Gefahr nicht mehr ausgesetzt sind, führen
+              wir eine vollständige Virenentfernung mit Temas PC Technik durch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>

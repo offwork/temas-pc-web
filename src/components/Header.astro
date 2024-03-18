@@ -2,9 +2,9 @@
 import { Icon } from "astro-icon/components";
 
 const navItems: Array<{ title: string; icon: string, url: string }> = [
-  { title: "Dienstleistungen", icon: "heroicons:wrench-screwdriver", url: "/temas-pc-web/dienstleistungen" },
-  { title: "Über uns", icon: "heroicons:newspaper", url: "/temas-pc-web/uber-uns" },
-  { title: "Kontakt", icon: "heroicons:at-symbol", url: "/temas-pc-web/kontakt" },
+  { title: "Dienstleistungen", icon: "heroicons:wrench-screwdriver", url: "/dienstleistungen" },
+  { title: "Über uns", icon: "heroicons:newspaper", url: "/uber-uns" },
+  { title: "Kontakt", icon: "heroicons:at-symbol", url: "/kontakt" },
 ];
 ---
 
@@ -12,7 +12,7 @@ const navItems: Array<{ title: string; icon: string, url: string }> = [
   class="page-header absolute  w-full bg-white z-20 border-b border-gigas-300 px-10 py-8"
 >
   <div class="flex items-center justify-between">
-    <a class="flex items-center gap-3" href="/temas-pc-web">
+    <a class="flex items-center gap-3" href="/">
       <h1 class="sr-only">Temas PC</h1>
       <Icon name="logomark" class="text-xl lg:text-2xl xl:text-4xl" />
     </a>

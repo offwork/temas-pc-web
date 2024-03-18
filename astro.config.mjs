@@ -4,8 +4,8 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://offwork.github.io',
-  base: '/temas-pc-web',
+  site: 'https://temas-pc-technik.de/',
+  base: '.',
   integrations: [tailwind(), icon({
     include: {
       "heroicons": ["*"]

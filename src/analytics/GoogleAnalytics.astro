@@ -7,11 +7,12 @@ const measurementId = props.measurementId;
 <script
   type="text/partytown"
   async
-  src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`}></script>
+  src={`https://www.googletagmanager.com/gtag/js?id=${measurementId}`} is:inline></script>
 <script
   type="text/partytown"
   data-ga-measurement-id={measurementId}
   id="ga-init"
+  is:inline
 >
   const measurementId = document
     .getElementById("ga-init")

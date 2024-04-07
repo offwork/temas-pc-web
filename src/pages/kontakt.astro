@@ -1,6 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
-const mapKey = import.meta.env.GOOGLE_MAPS_KEY
+import { googleMaps } from "../config";
 ---
 
 <Layout title="Temas PC Technik: Bleib sicher">
@@ -12,7 +12,7 @@ const mapKey = import.meta.env.GOOGLE_MAPS_KEY
       loading="lazy"
       allowfullscreen
       referrerpolicy="no-referrer-when-downgrade"
-      src={`https://www.google.com/maps/embed/v1/place?key=${mapKey}
+      src={`https://www.google.com/maps/embed/v1/place?key=${googleMaps.mapKey}
         &q=Kokenstraße+630159+Hannover,Germany`}
     >
     </iframe>

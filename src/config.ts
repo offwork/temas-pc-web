@@ -1,5 +1,6 @@
 const isProd = Boolean(import.meta.env.PROD)
 const measurementId = import.meta.env.GOOGLE_MEASUREMENT_ID
+const mapKey = import.meta.env.GOOGLE_MAPS_KEY
 
 export const site = {
   url: 'https://temas-pc-technik.de/',
@@ -9,6 +10,11 @@ export const site = {
 export const googleAnalytics = {
   enabled: isProd,
   measurementId: measurementId
+} as const
+
+export const googleMaps = {
+  enabled: isProd,
+  mapKey: mapKey
 } as const
 
 export const github = {
